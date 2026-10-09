@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parchados — Lleva tu parche contigo</title>
-    <!-- Conexión con la hoja de estilos CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <!--Fuente-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Header -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <header class="encabezado">
         <div class="logo">
             <img src="img/logoparchados.png" alt="Logo Parchados" class="logo-img">
             <span class="logo-texto">Parchados</span>
         </div>
-        <nav class="menu">
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">☰</button>
+        <nav class="menu" id="menu-principal">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -29,7 +29,6 @@
     </header>
 
     <main>
-        <!-- Hero -->
         <section id="inicio" class="hero">
             <div class="columna-izquierda">
                 <span class="etiqueta-subtitulo">HECHO EN MEDELLÍN</span>
@@ -45,7 +44,6 @@
             </div>
         </section>
 
-        <!-- Nosotros-->
         <section id="nosotros" class="nosotros">
             <div class="nosotros-contenedor">
                 <div class="nosotros-imagen">
@@ -60,12 +58,10 @@
             </div>
         </section>
 
-        <!-- Productos -->
         <section id="productos" class="productos">
             <span class="etiqueta-seccion">CATÁLOGO EXCLUSIVO</span>
             <h2>Nuestros Productos</h2>
             <div class="productos-contenedor">
-                <!-- Tarjeta 1 -->
                 <div class="tarjeta-producto">
                     <div class="imagen-tarjeta-wrap">
                         <img src="img/totebag_diseño_comuna13.jpg" alt="Tote Bag Comuna 13 Grafiti y Metrocable">
@@ -78,7 +74,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 2 -->
                 <div class="tarjeta-producto">
                     <div class="imagen-tarjeta-wrap">
                         <img src="img/totebag_diseño_mañanaserabonito.jpg" alt="Tote Bag Mañana será bonito">
@@ -91,7 +86,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 3 -->
                 <div class="tarjeta-producto">
                     <div class="imagen-tarjeta-wrap">
                         <img src="img/totebag_diseño_colombia.jpg" alt="Tote Bag Colombia Medellín Comuna 13">
@@ -104,7 +98,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 4 -->
                 <div class="tarjeta-producto">
                     <div class="imagen-tarjeta-wrap">
                         <img src="img/totebag_diseño_comuna.jpg" alt="Tote Bag Casitas Medellín Comuna 13">
@@ -117,7 +110,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 5 -->
                 <div class="tarjeta-producto">
                     <div class="imagen-tarjeta-wrap">
                         <img src="img/totebag_diseño_libre.jpg" alt="Tote Bag personalizada a solicitud">
@@ -130,7 +122,6 @@
                     </div>
                 </div>
 
-                <!-- Tarjeta 6 -->
                 <div class="tarjeta-producto">
                     <div class="imagen-tarjeta-wrap">
                         <img src="img/accesiorios.jpg" alt="Llaveros, imanes y sombreros">
@@ -145,7 +136,6 @@
             </div>
         </section>
 
-        <!-- Beneficios -->
         <section id="beneficios" class="beneficios">
             <span class="etiqueta-seccion luz">POR QUÉ ELEGIRNOS</span>
             <h2>Servicios y Beneficios</h2>
@@ -165,7 +155,6 @@
             </div>
         </section>
 
-        <!-- 6. TABLA -->
         <section class="tabla-seccion">
             <span class="etiqueta-seccion">GUÍA DE PRODUCTOS</span>
             <h2>Planes y Colecciones</h2>
@@ -215,7 +204,6 @@
             </div>
         </section>
 
-        <!-- Galería -->
         <section id="galeria" class="galeria">
             <span class="etiqueta-seccion">GALERÍA VISUAL</span>
             <h2>Comuna 13 en Imágenes</h2>
@@ -229,7 +217,6 @@
             </div>
         </section>
 
-        <!-- Formulario contacto -->
         <section id="contacto" class="contacto">
             <span class="etiqueta-seccion">CONTACTO DIRECTO</span>
             <h2>Haz tu Pedido o Visítanos</h2>
@@ -264,13 +251,12 @@
                 <div class="mapa-ubicacion">
                     <h3>Ubicación en Comuna 13</h3>
                     <p>Visítanos durante tu recorrido por el Graffitour en Medellín:</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.113385309425!2d-75.6215321!3d6.248786900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442a2aad2cfedf%3A0x79c213a59743ac31!2sGraffitour%20Comuna13.%20Medell%C3%ADn!5e0!3m2!1ses-419!2sco!4v1791505461124!5m2!1ses-419!2sco" width="100%" height="320" style="border:1px solid #dcd8c5; border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.113385309425!2d-75.6215321!3d6.248786900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442a2aad2cfedf%3A0x79c213a59743ac31!2sGraffitour%20Comuna13.%20Medell%C3%ADn!5e0!3m2!1ses-419!2sco!4v1791505461124!5m2!1ses-419!2sco" title="Mapa Graffitour Comuna 13" width="100%" height="320" style="border:1px solid #dcd8c5; border-radius: 4px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="pie-pagina">
         <div class="pie-pagina-contenedor">
             <div class="pie-info">
@@ -290,5 +276,25 @@
         </div>
     </footer>
 
+    <script>
+        const botonMenu = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        botonMenu.addEventListener('click', () => {
+            const abierto = menu.classList.toggle('abierto');
+            botonMenu.setAttribute('aria-expanded', abierto);
+            botonMenu.textContent = abierto ? '✕' : '☰';
+            botonMenu.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+        });
+
+        menu.querySelectorAll('a').forEach((enlace) => {
+            enlace.addEventListener('click', () => {
+                menu.classList.remove('abierto');
+                botonMenu.setAttribute('aria-expanded', 'false');
+                botonMenu.textContent = '☰';
+                botonMenu.setAttribute('aria-label', 'Abrir menú');
+            });
+        });
+    </script>
 </body>
 </html>
